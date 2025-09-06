@@ -4,12 +4,14 @@
 
 ## Wine Cellar - Technology Stack
 
-*Backend : 
+*Backend :  
+
     -Django (Python)	: The core web framework for handling application logic, database models, user authentication, and serving HTML templates.
 
 	-Celery : An asynchronous task queue. Used for running background tasks, such as sending reminder emails about wines.
 
-*Frontend :
+*Frontend :  
+
     -Django Templates : Used for the main page structure (server-side rendering) like base.html and lists (wine_list.html).
 
 	-React (with TypeScript) : A JavaScript library for building complex and interactive user interface components, like the wine map.
@@ -18,15 +20,18 @@
 
 	-Plain CSS : Used for the custom styling of the application.
 
-*Database : 
+*Database :  
+
     P-ostgreSQL : A powerful, open-source relational database used to store all application data (wines, users, vineyards, etc.).
 
-*Web Server / Proxy : 
+*Web Server / Proxy :  
+
     -unicorn : The WSGI server that runs the Python/Django application in a production environment.
 
 	-Caddy : A modern, powerful web server. In this project, it likely acts as a reverse proxy to handle HTTPS (SSL) and route traffic to the Gunicorn server.
 
-*DevOps / Tooling : 
+*DevOps / Tooling :  
+
     -Docker & Docker Compose : Used to create isolated, reproducible development and production environments for all the services (Django, PostgreSQL, etc.).
 	
     -Make (Makefile) : A build automation tool used to simplify common commands (e.g., make install, make server).
