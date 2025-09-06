@@ -69,6 +69,12 @@ docker compose exec web python manage.py import_wines_from_csv datasets/XWines_T
 
 4-Visit http://localhost:8000
 
+5-Admin Panel : http://localhost:8000/admin
+
+Default admin login :  
+    username : admin
+    password  :22222222
+
 
 *** Tip : visit django's admin panel, you will see filled data. If you edit a 'wine' for user admin; you can see on homepage.
 
