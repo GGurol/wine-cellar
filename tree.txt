@@ -1,0 +1,164 @@
+.
+├── caddy
+│   └── Caddyfile
+├── CHANGELOG.md
+├── datasets
+│   └── XWines_Test_100_wines.csv
+├── docker-compose.prod.full.yml
+├── docker-compose.prod.yml
+├── docker-compose.yml
+├── Dockerfile
+├── Dockerfile.prod
+├── docs
+│   ├── deployment.md
+│   ├── logo.svg
+│   ├── README.md
+│   ├── setup.md
+│   └── testing.md
+├── entrypoint.prod.sh
+├── entrypoint.sh
+├── eslint.config.mjs
+├── fixtures
+│   ├── classification.json
+│   └── user.json
+├── LICENSE
+├── locale
+│   ├── de_DE
+│   │   └── LC_MESSAGES
+│   │       └── django.po
+│   └── en_GB
+│       └── LC_MESSAGES
+│           ├── djangojs.po
+│           └── django.po
+├── Makefile
+├── manage.py
+├── mkdocs.yml
+├── output.log
+├── package.json
+├── prettier.config.mjs
+├── pyproject.toml
+├── README.md
+├── renovate.json
+├── requirements
+│   ├── base.txt
+│   ├── dev.txt
+│   └── prod.txt
+├── requirements.txt
+├── tests
+│   ├── conftest.py
+│   ├── helpers.py
+│   ├── test_drink_by.py
+│   ├── test_fields.py
+│   ├── test_views.py
+│   ├── test_wine_model.py
+│   └── user
+│       ├── __init__.py
+│       └── test_views.py
+├── tree.txt
+├── tsconfig.json
+├── webpack.common.js
+├── webpack.dev.js
+├── webpack.prod.js
+└── wine_cellar
+    ├── apps
+    │   ├── __init__.py
+    │   ├── user
+    │   │   ├── apps.py
+    │   │   ├── forms.py
+    │   │   ├── migrations
+    │   │   │   └── __init__.py
+    │   │   ├── models.py
+    │   │   ├── templates
+    │   │   │   └── settings.html
+    │   │   └── views.py
+    │   └── wine
+    │       ├── admin.py
+    │       ├── apps.py
+    │       ├── emails.py
+    │       ├── fields.py
+    │       ├── filters.py
+    │       ├── forms.py
+    │       ├── __init__.py
+    │       ├── management
+    │       │   ├── commands
+    │       │   │   ├── import_wines_from_csv.py
+    │       │   │   └── __init__.py
+    │       │   └── __init__.py
+    │       ├── migrations
+    │       │   └── __init__.py
+    │       ├── models.py
+    │       ├── tasks.py
+    │       ├── templates
+    │       │   ├── emails
+    │       │   │   └── drink_by_reminder.txt
+    │       │   ├── forms
+    │       │   │   └── form_field.html
+    │       │   ├── homepage.html
+    │       │   ├── includes
+    │       │   │   └── stock_buttons.html
+    │       │   ├── scanned_wine.html
+    │       │   ├── scan_wine.html
+    │       │   ├── wine_card.html
+    │       │   ├── wine_create.html
+    │       │   ├── wine_detail.html
+    │       │   ├── wine_edit.html
+    │       │   ├── wine_filter_field.html
+    │       │   ├── wine_list.html
+    │       │   └── wine_map.html
+    │       ├── templatetags
+    │       │   ├── __init__.py
+    │       │   ├── react_maps_tags.py
+    │       │   └── settings.py
+    │       ├── tests
+    │       │   ├── factories.py
+    │       │   └── __init__.py
+    │       └── views.py
+    ├── assets
+    │   ├── css
+    │   │   ├── button.css
+    │   │   ├── card.css
+    │   │   ├── detail.css
+    │   │   ├── forms.css
+    │   │   ├── homepage.css
+    │   │   ├── map.css
+    │   │   ├── menu.css
+    │   │   ├── page-layout.css
+    │   │   ├── styles.css
+    │   │   └── utility.css
+    │   ├── images
+    │   │   ├── bottle.svg
+    │   │   ├── favicon.svg
+    │   │   └── map_pin.svg
+    │   └── js
+    │       ├── index.js.map
+    │       └── init_tom_select.ts
+    ├── conf
+    │   ├── asgi.py
+    │   ├── celery.py
+    │   ├── docker_settings.py
+    │   ├── __init__.py
+    │   ├── prod.py
+    │   ├── settings.py
+    │   ├── test.py
+    │   ├── urls.py
+    │   └── wsgi.py
+    ├── __init__.py
+    ├── react
+    │   ├── maps
+    │   │   ├── country.json
+    │   │   ├── country_points.json
+    │   │   ├── GeoJsonMarker.js
+    │   │   ├── ItemPopup.jsx
+    │   │   ├── Map.jsx
+    │   │   ├── MaplibreGlLayer.js
+    │   │   ├── MapPopup.jsx
+    │   │   ├── MarkerClusterLayer.js
+    │   │   ├── react_maps.tsx
+    │   │   └── WineMaps.jsx
+    │   └── react_bar_code.tsx
+    └── templates
+        ├── base.html
+        └── registration
+            └── login.html
+
+37 directories, 125 files

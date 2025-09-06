@@ -1,6 +1,7 @@
 from django.contrib import admin
 
 from wine_cellar.apps.wine.models import (
+    Classification,
     FoodPairing,
     Grape,
     Size,
@@ -8,6 +9,12 @@ from wine_cellar.apps.wine.models import (
     Vineyard,
     Wine,
 )
+
+
+@admin.register(Classification)
+class ClassificationAdmin(admin.ModelAdmin):
+    list_display = ["name", "user"]
+    fields = ["name", "user"]
 
 
 @admin.register(Wine)

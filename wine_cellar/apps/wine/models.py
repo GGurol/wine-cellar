@@ -9,11 +9,10 @@ from django.templatetags.static import static
 from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
 
-
 class UserContentModel(models.Model):
     user = models.ForeignKey(get_user_model(), on_delete=models.CASCADE, null=True)
-    created = models.DateTimeField(auto_now_add=True)
-    modified = models.DateTimeField(auto_now=True)
+    created = models.DateTimeField(auto_now_add=True, null=True, blank=True)
+    modified = models.DateTimeField(auto_now=True, null=True, blank=True)
 
     class Meta:
         abstract = True
@@ -73,7 +72,7 @@ class Vineyard(UserContentModel):
     website = models.CharField(max_length=100, null=True)
     region = models.CharField(max_length=250, null=True)
     country = models.CharField(
-        max_length=3,
+        max_length=2,
         null=True,
         choices={country.alpha_2: country.name for country in pycountry.countries},
     )
@@ -157,7 +156,7 @@ class Wine(UserContentModel):
         validators=[MinValueValidator(0), MaxValueValidator(10)],
     )
     country = models.CharField(
-        max_length=3,
+        max_length=2,
         choices={country.alpha_2: country.name for country in pycountry.countries},
     )
     vineyard = models.ManyToManyField(Vineyard)
